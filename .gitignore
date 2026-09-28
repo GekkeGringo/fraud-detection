@@ -1,0 +1,11 @@
+﻿# Окружение и кэш
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.ruff_cache/
+.pytest_cache/
+
+# Данные и артефакты экспериментов
+data/
+mlruns/
