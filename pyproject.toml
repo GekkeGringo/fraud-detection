@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.11"
 dependencies = [
+    "joblib>=1.6.0",
     "lightgbm>=4.7.0",
     "matplotlib>=3.11.2",
     "mlflow>=3.16.1",
