@@ -2,8 +2,8 @@ import joblib
 import pandas as pd
 from fastapi import FastAPI
 
-from fraud_detection.config import MODEL_PATH, FRAUD_THRESHOLD
-from fraud_detection.schemas import Transaction, PredictionResponse
+from fraud_detection.config import FRAUD_THRESHOLD, MODEL_PATH
+from fraud_detection.schemas import PredictionResponse, Transaction
 
 app = FastAPI(title='Fraud Detection API')
 

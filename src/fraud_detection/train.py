@@ -1,7 +1,7 @@
 import joblib
 import lightgbm as lgb
 
-from fraud_detection.config import MODELS_DIR, MODEL_PATH, RANDOM_STATE
+from fraud_detection.config import MODEL_PATH, MODELS_DIR, RANDOM_STATE
 from fraud_detection.data import load_data, split_data
 
 
@@ -19,7 +19,7 @@ def train_model(X_train, y_train) -> lgb.LGBMClassifier:
 def main():
     print('Загрузка данных...')
     df = load_data()
-    X_train, X_test, y_train, y_test = split_data(df)
+    X_train, _, y_train, _ = split_data(df)
 
     print('Обучение модели...')
     model = train_model(X_train, y_train)

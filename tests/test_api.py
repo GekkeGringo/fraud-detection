@@ -1,6 +1,6 @@
-import pandas as pd
-from fastapi.testclient import TestClient
 from unittest.mock import patch
+
+from fastapi.testclient import TestClient
 
 import fraud_detection.api as api_module
 
