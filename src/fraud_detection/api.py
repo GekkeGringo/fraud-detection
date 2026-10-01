@@ -7,7 +7,7 @@ from fraud_detection.schemas import Transaction, PredictionResponse
 
 app = FastAPI(title='Fraud Detection API')
 
-model = joblib.load(MODEL_PATH)
+model = joblib.load(MODEL_PATH) if MODEL_PATH.exists() else None
 
 
 @app.get('/health')
